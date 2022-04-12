@@ -63,8 +63,11 @@
             border: 1px solid black;
             border-radius: 20px;
             font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-        
+            font-weight: 700;  
+        }
+
+        .contacto__input:hover {
+            border: 2px solid black;
         }
         
         .mensaje__titulo {
@@ -82,6 +85,11 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
         }
+
+        .mensaje__textarea:hover {
+            border: 2px solid #000000;
+
+        }
         
         /* .contacto__radio {
             width: 500px;
@@ -90,7 +98,7 @@
 
         .contacto__radio__opciones {
             margin-top: 50px;
-            width: 300px;
+            width: 400px;
             display: flex;
             justify-content: space-between;
         }
@@ -106,7 +114,11 @@
             display: inline;
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 20px;
+        }
+
+        .radio__input:hover {
+            color: rgb(119, 119, 119);
         }
         
         .tyc__p1 {
@@ -121,6 +133,10 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
             font-size: 15px;
+        }
+
+        .checkbox__container:hover {
+            color: rgb(119, 119, 119);
         }
         
 /*         .checkbox__container {
@@ -151,6 +167,11 @@
             font-size: 15px;
             background-color: #ffffff;
             border: 1px solid black;
+            transition: all 0.5s;
+        }
+
+        .contacto__botones__container input:hover {
+            background-color: hsl(0, 0%, 75%);
         }
 
 

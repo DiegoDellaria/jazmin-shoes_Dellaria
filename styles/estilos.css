@@ -48,7 +48,10 @@
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
+}
 
+.header__nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .entre800px1200px ul {
@@ -83,12 +86,17 @@
 }
 
 .categorias_container__cat {
-    background-color: rgba(137, 43, 226, 0.768);
+    background-color: rgba(122, 40, 199, 0.768);
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s;
+}
+
+.categorias_container__cat:hover {
+    background-color: rgba(137, 43, 226, 0.768);
 }
 
 .cat_titulo {
@@ -124,6 +132,13 @@
     font-weight: 700;
     font-size: 30px;
     color: #ffffff;
+}
+
+.cat__ver_mas a {
+    text-decoration: none;
+}
+
+.cat__ver_mas a:hover {
     text-decoration: underline;
 }
 
@@ -151,6 +166,11 @@
 
 .footer__lista li {
     width: 40px;
+    transition: all 0.3s;
+}
+
+.footer__lista li:hover {
+    transform: scale(1.1);
 }
 
 .footer__lista img {
@@ -177,6 +197,10 @@
 
 .footer__texto.contacto a {
     text-decoration: none;
+}
+
+.footer__texto.contacto a:hover {
+    text-decoration: underline;
 }
 
 /* Medidas para modificaciones del header */

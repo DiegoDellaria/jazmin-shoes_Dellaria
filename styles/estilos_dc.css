@@ -60,13 +60,33 @@
 .dc__map {
     border: white solid 5px;
     width: 400px; 
-    height: 400px; 
+    height: 400px;
 }
 
 .ml {
     width: 1000px;
     height: 500px;
     border: white solid 5px;
+}
+
+@media (min-width: 1300px) {
+    .dc__map {
+        transition: all 0.5s;
+    }
+    
+    .dc__map:hover {
+        width: 700px;
+        height: 600px;
+    }
+
+    .ml {
+        transition: all 0.5s;
+    }
+
+    .ml:hover {
+        width: 1200px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 992px) {

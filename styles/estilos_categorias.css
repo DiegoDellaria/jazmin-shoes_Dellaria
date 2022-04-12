@@ -7,7 +7,7 @@
     "header"
     "main"
     "footer";
-    grid-template-rows: 150px 1300px 230px;
+    grid-template-rows: 150px 1500px 230px;
 }
 
 .categoria__main {
@@ -32,9 +32,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: repeat(2, 350px); */
     column-gap: 50px;
-    row-gap: 70px;
+    row-gap: 120px;
+}
 
+.galeria__articulo {
+    opacity: 0.9;
+    transition: all 0.3s;
+}
 
+.galeria__articulo:hover {
+    opacity: 1;
+    color: violet;
 }
 
 .galeria__articulo img {
