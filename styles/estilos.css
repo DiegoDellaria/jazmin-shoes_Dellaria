@@ -79,10 +79,10 @@
     margin-bottom: 20%;
 }
 
-.carousel_boton {
-    /* box-shadow: 10px 5px 5px black; */
-    /* outline: black; */
-}
+/* .carousel_boton { 
+     box-shadow: 10px 5px 5px black; 
+     outline: black;
+ } */
 
 .carousel-control-next {
     filter: invert(100%);
