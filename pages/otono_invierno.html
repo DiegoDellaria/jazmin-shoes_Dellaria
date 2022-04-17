@@ -22,29 +22,41 @@
                 <img src="../img/logo_title_blanco.png" alt="Logo">
             </a>
             
-            <nav class="header__nav masDe1200px">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./otono_invierno.html">Otoño - invierno</a></li>
-                    <li><a href="./verano.html">Verano </a></li>
-                    <li><a href="./donde_comprar.html">Dónde comprar</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-
-            <nav class="header__nav entre800px1200px">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./donde_comprar.html">Dónde comprar</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><img src="../img/32px-Hamburger_icon_white.svg.png" alt="menu hamburguesa"></li>
-                </ul>
-            </nav>
-
-            <nav class="header__nav menosDe800px">
-                <ul>
-                    <li><img src="../img/32px-Hamburger_icon_white.svg.png" alt="menu hamburguesa"></li>
-                </ul>
+            <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="./otono_invierno.html">Otoño-invierno</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Botas</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otros estilos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Botas</a></li>
+                        <li><a class="dropdown-item" href="./verano.html">Verano</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Ver más</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
             </nav>
 
         </header>
@@ -55,7 +67,7 @@
             <div class="categoria__galeria">
                 
                 <div class="card">
-                    <img src="../img/invierno_1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_1.jpeg" class="card-img-top" alt="invierno 1">
                     <div class="card-body">
                         <p class="p1">Botineta Sport Katy</p>
                         <p class="p2">$ 2900</p>
@@ -63,7 +75,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_2.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_2.1.jpeg" class="card-img-top" alt="invierno 2">
                     <div class="card-body">
                         <p class="p1">Borcego Abril</p>
                         <p class="p2">$ 2800</p>
@@ -71,7 +83,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_3.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_3.1.jpeg" class="card-img-top" alt="invierno 3">
                     <div class="card-body">
                         <p class="p1">Texana Tina</p>
                         <p class="p2">$ 3000</p>
@@ -79,7 +91,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_4.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_4.1.jpeg" class="card-img-top" alt="invierno 4">
                     <div class="card-body">
                         <p class="p1">Chavitos Eva</p>
                         <p class="p2">$ 3500</p>
@@ -87,7 +99,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_5.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_5.1.jpeg" class="card-img-top" alt="invierno 5">
                     <div class="card-body">
                         <p class="p1">Botineta Sport Danu</p>
                         <p class="p2">$ 2500</p>
@@ -95,7 +107,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_6.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_6.1.jpeg" class="card-img-top" alt="invierno 6">
                     <div class="card-body">
                         <p class="p1">Borcego Milva</p>
                         <p class="p2">$ 2900</p>
@@ -103,7 +115,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_7.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_7.1.jpeg" class="card-img-top" alt="invierno 7">
                     <div class="card-body">
                         <p class="p1">Borcego Muriel</p>
                         <p class="p2">$ 3300</p>
@@ -111,7 +123,7 @@
                   </div>
 
                   <div class="card">
-                    <img src="../img/invierno_8.1.jpeg" class="card-img-top" alt="...">
+                    <img src="../img/invierno_8.1.jpeg" class="card-img-top" alt="invierno 8">
                     <div class="card-body">
                         <p class="p1">Luis XV Meryl</p>
                         <p class="p2">$ 2200</p>

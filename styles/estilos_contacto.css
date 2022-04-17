@@ -6,7 +6,7 @@
         "header"
         "main"
         "footer";
-        grid-template-rows: 150px 1400px 230px;
+        grid-template-rows: 150px 1450px 230px;
     }
 
     .contacto__container {
@@ -23,8 +23,13 @@
             margin-bottom: 50px;
         }
 
-        .contacto_form {
-            height: 1200px;
+        .form-label, .form-text, .form-check-label, .btn-primary {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        .posterior_a_form {
+            height: 1000px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;

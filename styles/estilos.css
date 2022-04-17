@@ -21,7 +21,7 @@
 
 .header {
     grid-area: header;
-    background-color: #f87d9c6b;
+    background-color: #ffb0c4;
     padding: 20px;
     display: flex;
     justify-content: space-between;
