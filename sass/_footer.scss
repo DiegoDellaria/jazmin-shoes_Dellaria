@@ -1,0 +1,57 @@
+.footer {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid black;
+
+    &__lista {
+        display: flex;
+        width: 500px;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-right: 50px;
+
+        li {
+            width: 40px;
+            transition: all 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &__contactoYCopy {
+        align-self: flex-start;
+    }
+
+    &__titulo {
+        font-family: $fuenteSecundaria;
+        font-weight: $fontWeightPrincipal;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    &__texto {
+        font-family: $fuenteSecundaria;
+        font-weight: $fontWeightPrincipal;
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+    .contacto a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

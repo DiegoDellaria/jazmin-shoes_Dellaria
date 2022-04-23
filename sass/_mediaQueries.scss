@@ -1,0 +1,73 @@
+/* Medidas de celular, tablet y desktop */
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .grid_container {
+        grid-template-rows: 100px 500px 3000px 230px;
+    }
+
+    .header__logo img {
+        width: 350px;
+    }
+
+    .categorias_container__cat .cat__galeria {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 100px;
+    }
+
+    .categorias_container__cat {
+        height: 950px;
+    }
+
+    .footer__texto {
+        font-size: 1.5rem;
+    }
+    
+    html {
+        font-size: 75%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .grid_container {
+        grid-template-rows: 100px 400px 7700px 230px;
+    }
+
+    .header {
+        &__logo img {
+            width: 50vw;
+        }
+
+    }
+
+    .categorias_container__cat {
+        height: 2500px;
+    }
+
+    .categorias_container__cat .cat__galeria {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        grid-row-gap: 30px;
+        grid-column-gap: 100px;
+    }
+
+    .footer__lista li {
+        width: 60px;
+    }
+
+    .footer__texto {
+        font-size: 1.5rem;
+    }
+
+    html {
+        font-size: 75%;
+    }
+
+}
