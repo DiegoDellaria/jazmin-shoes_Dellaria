@@ -3,6 +3,16 @@ $fuentePrincipal: 'Italiana', serif;
 $fuenteSecundaria: 'Roboto', sans-serif;
 $fontWeightPrincipal: 700;
 
+$colores: (
+    principal: rgba(122, 40, 199, 0.768),
+    especial: rgba(191, 40, 199, 0.768),
+
+    hover: rgba(137, 43, 226, 0.768),
+    hover_especial: rgba(196, 78, 202, 0.768),
+
+    fuentesYBordes: #ffffff
+);
+
 @import 'header';
 
 * {
@@ -48,7 +58,7 @@ $fontWeightPrincipal: 700;
     justify-content: space-evenly;
 
     &__cat {
-        background-color: rgba(122, 40, 199, 0.768);
+        background-color: map-get($map: $colores, $key: principal);
         height: 500px;
         display: flex;
         flex-direction: column;
@@ -56,10 +66,15 @@ $fontWeightPrincipal: 700;
         justify-content: space-evenly;
         transition: all 0.3s;
 
+        &--especial {
+            @extend .categorias_container__cat;
+            background-color: map-get($map: $colores, $key: especial);
+        }
+
         .cat_titulo {
             font-family: $fuentePrincipal;
             font-weight: $fontWeightPrincipal;
-            color: #ffffff;
+            color: map-get($map: $colores, $key: fuentesYBordes);
             font-size: 2.5rem;
             letter-spacing: 1px;
         }
@@ -73,7 +88,8 @@ $fontWeightPrincipal: 700;
             img {
                 width: 100%;
                 height: 90%;
-                border: #ffffff solid 5px;
+                border: solid 5px;
+                border-color: map-get($map: $colores, $key: fuentesYBordes);
             }
         }
 
@@ -81,10 +97,10 @@ $fontWeightPrincipal: 700;
             font-family: $fuenteSecundaria;
             font-weight: $fontWeightPrincipal;
             font-size: 2rem;
-            color: #ffffff;
+            color: map-get($map: $colores, $key: fuentesYBordes);
 
             a { 
-                color: #ffffff;
+                color: map-get($map: $colores, $key: fuentesYBordes);
                 text-decoration: none;
             }
 
@@ -95,9 +111,38 @@ $fontWeightPrincipal: 700;
     }
 
     &__cat:hover {
-        background-color: rgba(137, 43, 226, 0.768);
+        background-color: map-get($map: $colores, $key: hover);
     }
 
+    &__cat--especial:hover {
+        background-color: map-get($map: $colores, $key: hover_especial);
+    }
+    
+}
+
+@mixin texto ($fuente, $f_family, $size) {
+    font-family: $fuente, $f_family;
+    font-weight: $fontWeightPrincipal;
+    color: map-get($map: $colores, $key: fuentesYBordes);
+    font-size: $size;
+    letter-spacing: 1px;
+}
+
+.fuente--titulo {
+    @include texto('Italiana', serif, 2.5rem);
+}
+
+.fuente--parrafo {
+    @include texto('Roboto', sans-serif, 2rem);
+
+    a { 
+        color: map-get($map: $colores, $key: fuentesYBordes);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 @import 'footer';
