@@ -44,8 +44,8 @@
  "video"
  "categorias"
  "footer";
-  -ms-grid-rows: 150px 1000px 2300px 230px;
-      grid-template-rows: 150px 1000px 2300px 230px;
+  -ms-grid-rows: 0px 1000px 2300px 230px;
+      grid-template-rows: 0px 1000px 2300px 230px;
 }
 
 .carousel_container {
