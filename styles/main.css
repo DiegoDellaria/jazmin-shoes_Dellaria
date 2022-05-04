@@ -4,6 +4,7 @@
   grid-area: header;
   background-color: #ffb0c4;
   padding: 20px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +28,12 @@
   margin: 0;
 }
 
+html {
+  background-color: red;
+}
+
 .indexBody {
+  width: 100%;
   background-image: url(../img/pink-and-yellow-plain-background.jpg);
 }
 
@@ -36,9 +42,12 @@
   display: -ms-grid;
   display: grid;
   gap: 5px;
-      grid-template-areas: "header" "video" "categorias" "footer";
-  -ms-grid-rows: 150px 750px 1800px 230px;
-      grid-template-rows: 150px 750px 1800px 230px;
+      grid-template-areas: "header"
+ "video"
+ "categorias"
+ "footer";
+  -ms-grid-rows: 150px 1000px 2300px 230px;
+      grid-template-rows: 150px 1000px 2300px 230px;
 }
 
 .carousel_container {
@@ -86,7 +95,7 @@
 
 .categorias_container__cat, .categorias_container__cat--especial {
   background-color: rgba(122, 40, 199, 0.768);
-  height: 500px;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

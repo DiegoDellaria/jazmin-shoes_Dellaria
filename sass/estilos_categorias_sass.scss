@@ -1,0 +1,55 @@
+.grid_container_cat {
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 150px 1500px 230px;
+}
+
+.categoria {
+    &__galeria {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 70px;
+    }
+
+    &__titulo {
+        margin-top: 60px;
+        padding: 20px;
+        font-family: 'Italiana', serif;
+        font-weight: 700;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+}
+
+.card {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.9;
+    transition: all 0.3s;
+
+    &:hover {
+        opacity: 1;
+        color: violet;
+    }
+}
+
+.p1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.p2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@import 'mediaQueries_categorias';

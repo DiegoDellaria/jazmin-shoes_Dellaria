@@ -8,64 +8,66 @@
     <meta name="description" content="Encontrá las sucursales de Jazmín Shoes o hacé tu compra online">
     <meta name="keywords" content="tienda, negocio, online, sucursal, flores, capital, mujer, calzado, zapatos">
     <link rel="shortcut icon" href="../img/logo_icon.jpg">
-    <link rel="stylesheet" href="../styles/estilos.css">
-    <link rel="stylesheet" href="../styles/estilos_dc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/estilos_dc_sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="grid_container_dc">
-
-        <header class="header">
-
+<body class="dcBody">
+  
+  <header class="header">
+    
             <a class="header__logo" href="../index.html">
                 <img src="../img/logo_title_blanco.png" alt="Logo">
             </a>
             
             <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="../index.html">Inicio</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="./otono_invierno.html">Otoño-invierno</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Otros estilos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Botas</a></li>
+                        <li><a class="dropdown-item" href="./verano.html">Verano</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Ver más</a></li>
+                      </ul>
                       <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./otono_invierno.html">Otoño-invierno</a>
+                        <a class="nav-link text-light" href="./donde_comprar.html">Dónde comprar</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Botas</a>
-                      </li> -->
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Otros estilos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Botas</a></li>
-                          <li><a class="dropdown-item" href="./verano.html">Verano</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Ver más</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="./contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
-                  </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
                 </div>
-              </nav>
+              </div>
+            </nav>
 
         </header>
+
+        <div class="grid_container_dc">
 
         <main class="dc__main">
             <h1 class="dc__titulo">Dónde comprar</h1>
     
-                <h2 class="subtitulo">Acercate a una de nuestras sucursales:</h2>
+                <h2 class="dc__subtitulo">Acercate a una de nuestras sucursales:</h2>
     
                 <div class="dc__contenedor_general_mapas">
                     <div class="dc__contenedor_unico_mapas">
@@ -82,7 +84,7 @@
                     
                 </div>
 
-                <h2 class="subtitulo subtitulo2">O compra on-line a través de Mercado Libre:</h2>
+                <h2 class="dc__subtitulo subtitulo2">O compra on-line a través de Mercado Libre:</h2>
     
                 <iframe class="ml" src="https://www.mercadolibre.com.ar/" frameborder="0"></iframe>
     
@@ -103,7 +105,7 @@
 
             </ul>
             
-            <div class="contactoYCopy">
+            <div class="footer__contactoYCopy">
 
                 <p class="footer__texto contacto">Mail de contacto: <a href="mailto:contacto@jazminshoes.com">contacto@jazminshoes.com</a></p>
                 
@@ -113,6 +115,8 @@
         </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 
 </body>
 </html>

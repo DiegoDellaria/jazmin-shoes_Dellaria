@@ -1,0 +1,30 @@
+@media (min-width: 576px) and (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+
+    .grid_container_cat {
+        grid-template-rows: 100px 2500px 230px;
+    }
+
+    .categoria__galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 75%;
+    }
+
+    .grid_container_cat {
+        grid-template-rows: 100px 5200px 230px;
+    }
+
+    .categoria__galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
